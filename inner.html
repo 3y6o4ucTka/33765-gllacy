@@ -30,9 +30,11 @@
 </div>
 <main>
   <nav class="site-navigation">
-    <a href="index.html">Главная</a>
-    <a href="#">каталог</a>
-    <a>Сливочное</a>
+    <div class="breadcrumbs">
+      <a href="index.html">Главная</a>
+      <a href="#">каталог</a>
+      <a>Сливочное</a>
+    </div>
   </nav>
   <div class="worktime">
     <p>с 10 до 20, ежедневно</p>
@@ -43,21 +45,21 @@
 </div>
   <div class="sorting">
     <label for="sorting">Сортировка:</label>
-      <input type="text" id="sorting" name="sort" list="popular">
-         <datalist id="popular">
+         <select>
+           <option value="По популярности">По популярности</option>
           <option value="1">
           <option value="2">
-         </datalist>
+         </select>
   </div>
   <div class="price-range">
       <label for="dayscount">Цена: 100руб. - 500руб.</label>
       <input type="range" min="0" max="2000" step="10">
   </div>
   <div class="fatness">жирность:
-    <label><input type="radio" name="0%" value="0">0%</label>
-    <label><input type="radio" name="10%" value="10" checked>до 10%</label>
-    <label><input type="radio" name="30%" value="30">до 30%</label>
-    <label><input type="radio" name="over-0%" value="30+">выше 30%</label>
+    <label><input type="radio" name="range" value="0">0%</label>
+    <label><input type="radio" name="range" value="10" checked>до 10%</label>
+    <label><input type="radio" name="range" value="30">до 30%</label>
+    <label><input type="radio" name="range" value="30+">выше 30%</label>
   </div>
   <div class="fillers">
     <label for="fillers">Наполнители:</label>
@@ -67,7 +69,7 @@
     <label><input type="checkbox" name="type">сиропы</label>
     <label><input type="checkbox" name="type">джемы</label>
   </div>
-  <input type="button" name="btn" value="Применить">
+  <input type="submit" name="btn" value="Применить">
   <div class="catalog">
     <a><img src="#" alt="icecream">
       <p>сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -108,10 +110,10 @@
   </div>
   <div class="pages">
     <a>1</a>
-    <a>2</a>
-    <a>3</a>
-    <a>4</a>
-    <a>5</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
   </div>
 </main>
 <footer class="main-footer">
