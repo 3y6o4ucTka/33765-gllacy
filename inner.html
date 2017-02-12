@@ -3,31 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Glassy Shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/min-normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
-<div class="header-top">
-  <nav class="main-navigation">
-    <a class="header-logo">
-      <img src="img/logo.png" alt="Glassy Shop" width="200" height="50">
-    </a>
-    <ul class="main-nav">
-      <li>
-        <a href="#">Каталог</a>
-      </li>
-      <li>
-        <a href="#">Доставка и оплата</a>
-      </li>
-      <li>
-        <a href="#">О компании</a>
-      </li>
-    </ul>
-  </nav>
-    <input type="submit" name="search" value="" class="submit" />
-  <div class="user-block">
-    <a class="login" href="#">Вход</a>
-    <a class="login" href="#">2 товара</a>
-  </div>
-</div>
+  <header class="page-header container clearfix">
+          <img src="img/logo.png" alt="Glassy Shop" width="155" height="65"></a>
+      <nav class="main-navigation">
+        <ul class="main-nav">
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
+      </div>
+    </header>
 <main>
   <nav class="site-navigation">
     <div class="breadcrumbs">
@@ -73,43 +71,127 @@
   </div>
   <input type="submit" name="btn" value="Применить">
   <div class="catalog">
-    <a><img src="#" alt="icecream">
-      <p>сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочно-кофейное с кусочками шоколада</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочно-клубничное с присыпкой из белого шоколада</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочно крем-брюле с карамельной подливкой</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочное с брусничным джемом</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочно-черничное с цельными ягодами черники</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочно-лимонное с карамельной присыпкой</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочное с шоколадной стружкой</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочно-ванильное с кусочками шоколада</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочное с ментоловым сиропом</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочное с кусочками черного шоколада</p>
-    </a>
-    <a><img src="#" alt="icecream">
-    <p>сливочное с мятным сиропом</p>
-    </a>
-  </div>
+    <section class="popular clearfix">
+      <div class="popular-hover">
+        <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+         <div class="popular-hover-content">
+          <img src="img/orange.jpg" width="265" height="265" alt="Сливочное с апельсиновым джемом и цитросувой стружкой">
+          <p class="popular-price"><span>310 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+          <a href="#">Сливочное с апельсиновым джемом и цитросувой стружкой</a>
+        </div>
+      </div>
+    </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/choco.jpg" width="265" height="265" alt="Сливочно-кофейное с кусочками шоколада">
+              <p class="popular-price"><span>380 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/strawberry.jpg" width="265" height="265" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <p class="popular-price"><span>355 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/cream-brule.jpg" width="265" height="265" alt="Сливочное крем-брюле с карамельной подливкой">
+              <p class="popular-price"><span>415 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/brusn.jpg" width="265" height="265" alt="Сливочное с брусничным джемом">
+              <p class="popular-price"><span>325 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочное с брусничным джемом</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/yag-cherniki.jpg" width="265" height="265" alt="Сливочно-черничное с цельными ягодами черники">
+              <p class="popular-price"><span>410 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/karam-prisip.jpg" width="265" height="265" alt="Сливочно-лимонное с карамельной присыпкой">
+              <p class="popular-price"><span>375 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/choco-struj.jpg" width="265" height="265" alt="Сливочное с шоколадной стружкой">
+              <p class="popular-price"><span>320 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочное с шоколадной стружкой</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/kus-choco.jpg" width="265" height="265" alt="Сливочно-ванильное с кусочками шоколада">
+              <p class="popular-price"><span>440 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/ment-sirop.jpg" width="265" height="265" alt="Сливочное с ментоловым сиропом">
+              <p class="popular-price"><span>435 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочное с ментоловым сиропом</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/kus-bchoco.jpg" width="265" height="265" alt="Сливочное с кусочками черного шоколада">
+              <p class="popular-price"><span>355 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочное с кусочками черного шоколада</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-hover">
+            <a class="btn btn-popular-hover" href="#">Быстрый просмотр</a>
+            <div class="popular-hover-content">
+              <img src="img/myat-sirop.jpg" width="265" height="265" alt="Сливочное с мятным сиропом">
+              <p class="popular-price"><span>420 <img src="img/rub.png" width="31" height="33" alt="Рубль"></span>/кг</p>
+              <a href="#">Сливочное с мятным сиропом</a>
+            </div>
+          </div>
+        </section>
+      </div>
   <div class="pages">
     <a>1</a>
     <a href="#">2</a>
@@ -121,23 +203,22 @@
 <footer class="main-footer">
   <div class="container">
     <section class="footer-social">
-      <p>Давайте дружить!</p>
-      <a class="social-btn social-btn-vk" href="#">Твиттер</a>
+      <a class="social-btn social-btn-tw" href="#">Твиттер</a>
       <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#"><Фейсбук></a>
+      <a class="social-btn social-btn-vk" href="#"><Вконтакте></a>
     </section>
-    <section class="footer-documents">
-      <a href="#">Для поставщиков</a><br>
-      <a href="#">О производстве</a><br>
-      <a href="#">Наши документы</a><br>
-      <a href="#">Экологические стандарты</a><br>
+    <section class="footer-info">
+      <a class="footer-icon" href="#">Для поставщиков</a>
+      <a href="#">О производстве</a>
+    </section>
+      <section class="footer-documents">
+      <a href="#">Наши документы</a>
+      <a href="#">Экологические стандарты</a>
     </section>
     <section class="footer-copyright">
-      <a>
-        <img src="#" alt="footer-logo">
-      </a>
-      <a class="btn" href="https://htmlacademy.ru">Сделано в HTML Academy 2017</a>
+        <img src="img/footer-logo.png" alt="footer-logo">
+      <p>Сделано в <a class="footer-href" href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2017</p>
     </section>
   </div>
 </footer>
