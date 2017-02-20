@@ -5,6 +5,7 @@ body {
   line-height: 20px;
   color: white;
   background-color: #849d8f;
+  margin: 0;
 }
 body > input[type="radio"] {
   display: none;
@@ -101,7 +102,7 @@ body > input[type="radio"] {
   width: 1146px;
   margin: 0 auto;
 }
-.deals::after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -341,7 +342,6 @@ li:hover .main-navigation-sub {
 }
 .common-buttons {
   position: relative;
-
   float: right;
   width: 284px;
   margin-left: 5px;
@@ -360,13 +360,10 @@ li:hover .main-navigation-sub {
   display: inline-block;
   margin: 0;
   padding: 8px;
-
   font-size: 14px;
   line-height: 16px;
-
   border: 0;
   background-color: #9db1a5;
-
   border-radius: 16px;
   vertical-align: top;
 }
@@ -377,9 +374,7 @@ li:hover .main-navigation-sub {
   padding: 0;
   margin-right: 10px;
   padding-bottom: 6px;
-
   font-size: 0;
-
   vertical-align: top;
 }
 
@@ -487,13 +482,10 @@ li:hover .main-navigation-sub {
 
 .common-buttons-form {
   position: absolute;
-
   display: none;
   margin: 0;
   padding: 0;
-
   background-color: #f8f7f4;
-
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
   z-index: 100;
@@ -649,7 +641,6 @@ li:hover .main-navigation-sub {
 }
 .buy {
 clear: both;
-
 }
 
 main {
@@ -1199,7 +1190,7 @@ main .btn:active,
 }
 .modal-content {
   position: absolute;
-  top: 120px;
+  top: -90px;
   left: 50%;
   margin-left: -240px;
   width: 477px;
@@ -1207,6 +1198,11 @@ main .btn:active,
   color: #000000;
   background-color: #f8f7f4;
   border-radius: 10px;
+}
+.modal-content textarea {
+  width: 410px;
+  height: 141px;
+
 }
 .feedback-close {
   position: absolute;
@@ -1238,10 +1234,11 @@ main .btn:active,
 .feedback-close::after {
   transform: rotate(-45deg);
 }
-.modal-content h2 {
+.modal-content p {
 margin: 0;
 margin-left: 24px;
 margin-bottom: 20px;
+font-style: normal;
 font-size: 24px;
 line-height: 28px;
 
@@ -1251,20 +1248,23 @@ line-height: 28px;
   margin-left: 24px;
 }
 .modal-content .btn {
-  float: bottom;
+  float: right;
   width: 138px;
   padding: 0;
   font-weight: 700;
   color: white;
   min-height: 46px;
   font-size: 18px;
+  margin-right: 24px;
 }
 
 .main-footer {
+    height: 75px;
     padding-bottom: 25px;
     border-top: 1px solid #a9bbb1;
   }
 .footer-social {
+  clear: both;
     float: left;
     margin-top: 35px;
     margin-right: 205px;
@@ -1282,6 +1282,10 @@ line-height: 28px;
   }
   .social-btn:hover {
     opacity: 1.0;
+  }
+  .footer-social a:active {
+    opacity: 1.0;
+    box-shadow: inset 0px 2px 1px #888888;
   }
  .social-btn::before {
     content: "";
@@ -1353,9 +1357,7 @@ line-height: 28px;
     background-position: -5px -107px;
     background-image: url("../img/sprite.png");
   }
-.footer-info, .hart {
 
-}
 .footer-documents {
     float: left;
     width: 180px;
@@ -1745,3 +1747,9 @@ line-height: 28px;
 
     border-radius: 50%;
   }
+iframe {
+  iframe {
+     width: 1200px;
+     height: 430px;
+     border: 0;
+}
