@@ -209,7 +209,7 @@ textarea {
   margin-right: 4px;
   margin-left: 1px;
   padding: 7px 12px 6px 14px;
-  font-weight: 700;
+  font-weight: bold;
   color: black;
   border-radius: 14px;
 }
@@ -683,11 +683,16 @@ main .btn:active,
 .common-buttons-form-login input[type="password"] {
   width: 226px;
 }
+.worktime {
+margin-top: 0;
+width: 200px;
+float: right;
+}
 
 .worktime p {
   margin: 0;
-  margin-top: 11px;
-  font-weight: 700;
+  margin-top: -11px;
+  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-align: right;
@@ -699,8 +704,7 @@ main .btn:active,
 }
 
 .worktime p:last-child {
-  margin-top: 9px;
-  padding-top: 8px;
+  padding-top: 0px;
   font-size: 22px;
   line-height: 24px;
   float: right;
@@ -728,7 +732,7 @@ main .btn:active,
   width: 670px;
   margin: 0 auto;
   margin-bottom: 40px;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 60px;
   line-height: 60px;
   text-align: center;
@@ -841,12 +845,15 @@ main .btn:active,
 }
 
 .deals-catalog h2 {
+  margin-top: 0;
   margin-bottom: -2px;
+  font-size: 35px;
+  line-height: 41px;
 }
 
 .deals-catalog p {
   margin-bottom: 44px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   line-height: 22px;
 }
@@ -1128,9 +1135,9 @@ main .btn:active,
 .map-and-adress {
   clear: both;
   position: relative;
-  width: 1200px;
+  width: 100%;
   height: 430px;
-  margin: 0 auto;
+  margin: 0;
   background-color: #e9e1c2;
   background-image: url("../img/map.jpg");
 }
@@ -1357,7 +1364,6 @@ line-height: 28px;
     background-position: -5px -107px;
     background-image: url("../img/sprite.png");
   }
-
 .footer-documents {
     float: left;
     width: 180px;
@@ -1389,10 +1395,10 @@ line-height: 28px;
     line-height: 18px;
   }
 .breadcrumbs {
-    margin-top: 40px;
+  margin-top: 24px;
     color: #e4e9e6;
     list-style: none;
-    clear: both;
+    width: 800px;
   }
 .breadcrumbs a {
     font-size: 14px;
@@ -1401,7 +1407,6 @@ line-height: 28px;
   }
 .breadcrumbs ul {
     margin: 0;
-    margin-top: 25px;
     margin-bottom: 2px;
     padding: 0;
   }
@@ -1416,6 +1421,7 @@ line-height: 28px;
   }
   .filters {
     margin-bottom: 40px;
+    font-weight: normal;
   }
 
   .filters > .filters-label,
@@ -1598,16 +1604,13 @@ line-height: 28px;
 
   fieldset:last-of-type label::after {
     content: "";
-
     position: absolute;
     left: 0;
     top: 0;
 
     width: 18px;
     height: 18px;
-
     border: 1px solid #ffffff;
-
     border-radius: 3px;
   }
 
@@ -1621,10 +1624,8 @@ line-height: 28px;
     position: absolute;
     left: 0;
     top: 0;
-
     width: 20px;
     height: 20px;
-
     background-color: inherit;
     background-image: url("../img/checkbox-on.png");
   }
@@ -1748,8 +1749,7 @@ line-height: 28px;
     border-radius: 50%;
   }
 iframe {
-  iframe {
-     width: 1200px;
+     width: 100%;
      height: 430px;
      border: 0;
 }
